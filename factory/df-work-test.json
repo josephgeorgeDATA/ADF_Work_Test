@@ -1,0 +1,9 @@
+{
+	"name": "df-work-test",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1caa7cb7-9b53-4c86-b800-deecf671d48c",
+		"tenantId": "94152688-52c2-415a-8f51-c683a8b2bd09"
+	}
+}

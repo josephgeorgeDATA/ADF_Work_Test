@@ -1,0 +1,24 @@
+{
+	"name": "ds_blob_stgworktest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_stgworktest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "TestFile1.csv",
+				"container": "sftp-files-sink"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

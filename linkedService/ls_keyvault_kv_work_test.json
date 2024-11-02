@@ -1,0 +1,11 @@
+{
+	"name": "ls_keyvault_kv_work_test",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-work-test.vault.azure.net/"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "lsstgsftptestjoseph",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Sftp",
+		"typeProperties": {
+			"host": "stgsftptestjoseph.blob.core.windows.net",
+			"port": 22,
+			"skipHostKeyValidation": true,
+			"authenticationType": "Basic",
+			"userName": "stgsftptestjoseph.sftpadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_keyvault_kv_work_test",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kv-stgsftptestjoseph-password"
+			}
+		}
+	}
+}
